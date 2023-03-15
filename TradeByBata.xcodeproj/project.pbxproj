@@ -16,6 +16,7 @@
 		5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545D429C1E358005F1874 /* SignInViewModelProtocol.swift */; };
 		5ED545D729C1E378005F1874 /* SingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545D629C1E378005F1874 /* SingInView.swift */; };
 		5ED545D929C1E39B005F1874 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545D829C1E39B005F1874 /* SignInViewModel.swift */; };
+		5ED545DB29C1E3CC005F1874 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545DA29C1E3CC005F1874 /* LoginView.swift */; };
 		5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF22B0229BA49CE00361F35 /* AppDelegate.swift */; };
 		5EF22B0529BA49CE00361F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */; };
 		5EF22B0C29BA49CF00361F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF22B0B29BA49CF00361F35 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		5ED545D429C1E358005F1874 /* SignInViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelProtocol.swift; sourceTree = "<group>"; };
 		5ED545D629C1E378005F1874 /* SingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInView.swift; sourceTree = "<group>"; };
 		5ED545D829C1E39B005F1874 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		5ED545DA29C1E3CC005F1874 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5EF22AFF29BA49CE00361F35 /* TradeByBata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeByBata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF22B0229BA49CE00361F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		5ED545D129C1E313005F1874 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5ED545DA29C1E3CC005F1874 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				5EF22B0529BA49CE00361F35 /* SceneDelegate.swift in Sources */,
 				5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */,
 				5EB3D7E829BC757500C28685 /* Colors.swift in Sources */,
+				5ED545DB29C1E3CC005F1874 /* LoginView.swift in Sources */,
 				5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */,
 				5ED545D329C1E339005F1874 /* LoginViewModelProtocol.swift in Sources */,
 				5ED545D929C1E39B005F1874 /* SignInViewModel.swift in Sources */,
