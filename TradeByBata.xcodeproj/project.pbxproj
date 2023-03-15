@@ -13,6 +13,7 @@
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
 		5ED545D329C1E339005F1874 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545D229C1E339005F1874 /* LoginViewModelProtocol.swift */; };
+		5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545D429C1E358005F1874 /* SignInViewModelProtocol.swift */; };
 		5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF22B0229BA49CE00361F35 /* AppDelegate.swift */; };
 		5EF22B0529BA49CE00361F35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */; };
 		5EF22B0C29BA49CF00361F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF22B0B29BA49CF00361F35 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		5ED545D229C1E339005F1874 /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
+		5ED545D429C1E358005F1874 /* SignInViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelProtocol.swift; sourceTree = "<group>"; };
 		5EF22AFF29BA49CE00361F35 /* TradeByBata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeByBata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF22B0229BA49CE00361F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				5ED545D229C1E339005F1874 /* LoginViewModelProtocol.swift */,
+				5ED545D429C1E358005F1874 /* SignInViewModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				5EF22B0529BA49CE00361F35 /* SceneDelegate.swift in Sources */,
 				5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */,
 				5EB3D7E829BC757500C28685 /* Colors.swift in Sources */,
+				5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */,
 				5ED545D329C1E339005F1874 /* LoginViewModelProtocol.swift in Sources */,
 				5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */,
 			);
