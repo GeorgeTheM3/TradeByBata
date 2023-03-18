@@ -11,6 +11,7 @@
 		5EB3D7EA29BC75A400C28685 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3D7E929BC75A400C28685 /* Fonts.swift */; };
 		5ECE4F9829C591B400EA8E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9729C591B400EA8E04 /* NetworkManager.swift */; };
 		5ECE4F9C29C5921300EA8E04 /* FlashSaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9B29C5921300EA8E04 /* FlashSaleModel.swift */; };
+		5ECE4F9E29C5922C00EA8E04 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -31,6 +32,7 @@
 		5EB3D7E929BC75A400C28685 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		5ECE4F9729C591B400EA8E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5ECE4F9B29C5921300EA8E04 /* FlashSaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleModel.swift; sourceTree = "<group>"; };
+		5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				5ECE4F9729C591B400EA8E04 /* NetworkManager.swift */,
 				5ECE4F9B29C5921300EA8E04 /* FlashSaleModel.swift */,
+				5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */,
 			);
 			path = NetwrokLayer;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				5ED545DB29C1E3CC005F1874 /* LoginView.swift in Sources */,
 				5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */,
 				5ED545DD29C1E3F0005F1874 /* LoginViewModel.swift in Sources */,
+				5ECE4F9E29C5922C00EA8E04 /* LatestModel.swift in Sources */,
 				5ED545D329C1E339005F1874 /* LoginViewModelProtocol.swift in Sources */,
 				5ECE4F9829C591B400EA8E04 /* NetworkManager.swift in Sources */,
 				5ED545D929C1E39B005F1874 /* SignInViewModel.swift in Sources */,
