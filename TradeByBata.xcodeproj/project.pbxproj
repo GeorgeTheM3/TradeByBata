@@ -13,6 +13,7 @@
 		5ECE4F9C29C5921300EA8E04 /* FlashSaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9B29C5921300EA8E04 /* FlashSaleModel.swift */; };
 		5ECE4F9E29C5922C00EA8E04 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */; };
 		5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9F29C5924400EA8E04 /* ProductModel.swift */; };
+		5ECE4FA529C5937300EA8E04 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -35,6 +36,7 @@
 		5ECE4F9B29C5921300EA8E04 /* FlashSaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleModel.swift; sourceTree = "<group>"; };
 		5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		5ECE4F9F29C5924400EA8E04 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -66,8 +68,6 @@
 		5EB3D7E629BC756800C28685 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				5EB3D7E729BC757500C28685 /* Colors.swift */,
-				5EB3D7E929BC75A400C28685 /* Fonts.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -89,6 +89,16 @@
 				5ECE4F9F29C5924400EA8E04 /* ProductModel.swift */,
 			);
 			path = NetwrokLayer;
+			sourceTree = "<group>";
+		};
+		5ECE4FA329C5932E00EA8E04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EB3D7E929BC75A400C28685 /* Fonts.swift */,
+				5EB3D7E729BC757500C28685 /* Colors.swift */,
+				5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5ED545C529C1E1D9005F1874 /* Coordinator */ = {
@@ -166,11 +176,12 @@
 			children = (
 				5EF22B0229BA49CE00361F35 /* AppDelegate.swift */,
 				5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */,
+				5ECE4FA329C5932E00EA8E04 /* Extensions */,
+				5ED545C529C1E1D9005F1874 /* Coordinator */,
+				5EB3D7E629BC756800C28685 /* Helper */,
 				5ECE4F9529C5919F00EA8E04 /* Model */,
 				5ED545DE29C1E48E005F1874 /* MainFlow */,
 				5ED545CD29C1E2E3005F1874 /* AuthFlow */,
-				5ED545C529C1E1D9005F1874 /* Coordinator */,
-				5EB3D7E629BC756800C28685 /* Helper */,
 				5EF22B0B29BA49CF00361F35 /* Assets.xcassets */,
 				5EF22B0D29BA49CF00361F35 /* LaunchScreen.storyboard */,
 				5EF22B1029BA49CF00361F35 /* Info.plist */,
@@ -250,6 +261,7 @@
 			files = (
 				5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */,
 				5EB3D7EA29BC75A400C28685 /* Fonts.swift in Sources */,
+				5ECE4FA529C5937300EA8E04 /* UIViewController + Extensions.swift in Sources */,
 				5ECE4F9C29C5921300EA8E04 /* FlashSaleModel.swift in Sources */,
 				5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */,
 				5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */,
