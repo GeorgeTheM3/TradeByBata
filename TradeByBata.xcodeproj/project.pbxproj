@@ -20,6 +20,7 @@
 		5ECE4FC929C70B1000EA8E04 /* HomePageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FC829C70B1000EA8E04 /* HomePageCollectionView.swift */; };
 		5ECE4FCB29C70B4A00EA8E04 /* HomePageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FCA29C70B4A00EA8E04 /* HomePageViewModelProtocol.swift */; };
 		5ECE4FCD29C70B7600EA8E04 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FCC29C70B7600EA8E04 /* Section.swift */; };
+		5ECE4FCF29C70B8C00EA8E04 /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FCE29C70B8C00EA8E04 /* Headers.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -49,6 +50,7 @@
 		5ECE4FC829C70B1000EA8E04 /* HomePageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionView.swift; sourceTree = "<group>"; };
 		5ECE4FCA29C70B4A00EA8E04 /* HomePageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModelProtocol.swift; sourceTree = "<group>"; };
 		5ECE4FCC29C70B7600EA8E04 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		5ECE4FCE29C70B8C00EA8E04 /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5ECE4FCC29C70B7600EA8E04 /* Section.swift */,
+				5ECE4FCE29C70B8C00EA8E04 /* Headers.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */,
 				5ECE4FCB29C70B4A00EA8E04 /* HomePageViewModelProtocol.swift in Sources */,
 				5ED545DD29C1E3F0005F1874 /* LoginViewModel.swift in Sources */,
+				5ECE4FCF29C70B8C00EA8E04 /* Headers.swift in Sources */,
 				5ECE4FC929C70B1000EA8E04 /* HomePageCollectionView.swift in Sources */,
 				5ECE4FC029C709B400EA8E04 /* TabBarController.swift in Sources */,
 				5ECE4F9E29C5922C00EA8E04 /* LatestModel.swift in Sources */,
