@@ -41,7 +41,7 @@ class TabBarController: UITabBarController {
         let chaNavigationController = UINavigationController(rootViewController: chaViewController)
         controllers.append(chaNavigationController)
         
-        let profileViewController = ProfilePageView() // add controller
+        let profileViewController = ProfilePageView(viewModel: ProfilePageViewModel()) // add controller
         profileViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
         let profileNavigationController = UINavigationController(rootViewController: profileViewController)
         controllers.append(profileNavigationController)
