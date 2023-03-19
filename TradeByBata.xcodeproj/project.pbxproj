@@ -14,6 +14,7 @@
 		5ECE4F9E29C5922C00EA8E04 /* LatestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */; };
 		5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9F29C5924400EA8E04 /* ProductModel.swift */; };
 		5ECE4FA529C5937300EA8E04 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */; };
+		5ECE4FBC29C708BF00EA8E04 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FBB29C708BF00EA8E04 /* Delegates.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -37,6 +38,7 @@
 		5ECE4F9D29C5922C00EA8E04 /* LatestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestModel.swift; sourceTree = "<group>"; };
 		5ECE4F9F29C5924400EA8E04 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		5ECE4FBB29C708BF00EA8E04 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -65,13 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5EB3D7E629BC756800C28685 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		5ECE4F9529C5919F00EA8E04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +94,14 @@
 				5ECE4FA429C5937300EA8E04 /* UIViewController + Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5ECE4FBA29C708AA00EA8E04 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5ECE4FBB29C708BF00EA8E04 /* Delegates.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		5ED545C529C1E1D9005F1874 /* Coordinator */ = {
@@ -176,9 +179,9 @@
 			children = (
 				5EF22B0229BA49CE00361F35 /* AppDelegate.swift */,
 				5EF22B0429BA49CE00361F35 /* SceneDelegate.swift */,
+				5ECE4FBA29C708AA00EA8E04 /* Helper */,
 				5ECE4FA329C5932E00EA8E04 /* Extensions */,
 				5ED545C529C1E1D9005F1874 /* Coordinator */,
-				5EB3D7E629BC756800C28685 /* Helper */,
 				5ECE4F9529C5919F00EA8E04 /* Model */,
 				5ED545DE29C1E48E005F1874 /* MainFlow */,
 				5ED545CD29C1E2E3005F1874 /* AuthFlow */,
@@ -266,6 +269,7 @@
 				5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */,
 				5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */,
 				5EF22B0529BA49CE00361F35 /* SceneDelegate.swift in Sources */,
+				5ECE4FBC29C708BF00EA8E04 /* Delegates.swift in Sources */,
 				5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */,
 				5EB3D7E829BC757500C28685 /* Colors.swift in Sources */,
 				5ED545DB29C1E3CC005F1874 /* LoginView.swift in Sources */,
