@@ -29,6 +29,7 @@
 		5ECE4FE329C83E5D00EA8E04 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE229C83E5D00EA8E04 /* UserModel.swift */; };
 		5ECE4FE629C83E7700EA8E04 /* LogicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE529C83E7700EA8E04 /* LogicModel.swift */; };
 		5ECE4FE929C83EA100EA8E04 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE829C83EA100EA8E04 /* UserDefaultsStorage.swift */; };
+		5ECE4FEB29C83ED200EA8E04 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -66,6 +67,7 @@
 		5ECE4FE229C83E5D00EA8E04 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5ECE4FE529C83E7700EA8E04 /* LogicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicModel.swift; sourceTree = "<group>"; };
 		5ECE4FE829C83EA100EA8E04 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				5ECE4FE829C83EA100EA8E04 /* UserDefaultsStorage.swift */,
+				5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECE4FEB29C83ED200EA8E04 /* LocalStorage.swift in Sources */,
 				5ECE4FE929C83EA100EA8E04 /* UserDefaultsStorage.swift in Sources */,
 				5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */,
 				5EB3D7EA29BC75A400C28685 /* Fonts.swift in Sources */,
