@@ -26,6 +26,7 @@
 		5ECE4FD529C70C1200EA8E04 /* FlashSaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FD429C70C1200EA8E04 /* FlashSaleCell.swift */; };
 		5ECE4FD729C70C3F00EA8E04 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FD629C70C3F00EA8E04 /* GroupHeaderView.swift */; };
 		5ECE4FD929C70C6600EA8E04 /* SearchBarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FD829C70C6600EA8E04 /* SearchBarHeaderView.swift */; };
+		5ECE4FE329C83E5D00EA8E04 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE229C83E5D00EA8E04 /* UserModel.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -60,6 +61,7 @@
 		5ECE4FD429C70C1200EA8E04 /* FlashSaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCell.swift; sourceTree = "<group>"; };
 		5ECE4FD629C70C3F00EA8E04 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
 		5ECE4FD829C70C6600EA8E04 /* SearchBarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarHeaderView.swift; sourceTree = "<group>"; };
+		5ECE4FE229C83E5D00EA8E04 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5ECE4F9629C591A300EA8E04 /* NetwrokLayer */,
+				5ECE4FE229C83E5D00EA8E04 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				5ED545D929C1E39B005F1874 /* SignInViewModel.swift in Sources */,
 				5ECE4FCD29C70B7600EA8E04 /* Section.swift in Sources */,
 				5ED545D729C1E378005F1874 /* SingInView.swift in Sources */,
+				5ECE4FE329C83E5D00EA8E04 /* UserModel.swift in Sources */,
 				5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
