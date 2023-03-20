@@ -44,7 +44,7 @@ class FlashSaleCell: UICollectionViewCell {
     private lazy var discountLabel: UILabel = {
         let label = UILabel()
         label.text = "30% off"
-        label.font = .helveticaBold8
+        label.font = .helveticaBold10
         label.backgroundColor = .red
         label.textColor = .white
         label.frame = CGRect(x: bounds.width - 55, y: 10, width: 45, height: bounds.height * 0.08)
