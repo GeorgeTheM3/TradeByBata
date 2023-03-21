@@ -32,6 +32,7 @@
 		5ECE4FEB29C83ED200EA8E04 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */; };
 		5ECE4FF729C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FF629C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift */; };
 		5ECE4FF929C9EBD600EA8E04 /* ProfileCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FF829C9EBD600EA8E04 /* ProfileCustomCell.swift */; };
+		5ECE4FFB29C9EBFF00EA8E04 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FFA29C9EBFF00EA8E04 /* ProfileHeader.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -72,6 +73,7 @@
 		5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		5ECE4FF629C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewModelProtocol.swift; sourceTree = "<group>"; };
 		5ECE4FF829C9EBD600EA8E04 /* ProfileCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCustomCell.swift; sourceTree = "<group>"; };
+		5ECE4FFA29C9EBFF00EA8E04 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 		5ECE4FF529C9EB0400EA8E04 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				5ECE4FFA29C9EBFF00EA8E04 /* ProfileHeader.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				5ECE4FC729C70B0000EA8E04 /* HomePageViewModel.swift in Sources */,
 				5ECE4FA529C5937300EA8E04 /* UIViewController + Extensions.swift in Sources */,
 				5ECE4FD529C70C1200EA8E04 /* FlashSaleCell.swift in Sources */,
+				5ECE4FFB29C9EBFF00EA8E04 /* ProfileHeader.swift in Sources */,
 				5ECE4F9C29C5921300EA8E04 /* FlashSaleModel.swift in Sources */,
 				5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */,
 				5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */,
