@@ -27,4 +27,10 @@ class UserDefaultsStorage {
             return false
         }
     }
+    
+    func getUserFromUserDefaults(firstName: String) -> User? {
+        guard let userData = userDefaults.data(forKey: firstName) else { return nil}
+        let user = try? JSONDecoder().decode(User.self, from: userData)
+        return user
+    }
 }
