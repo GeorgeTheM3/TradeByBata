@@ -7,8 +7,12 @@
 
 import UIKit
 
+import UIKit
+
 class SingInView: UIViewController {
-    private var viewModel: SignInViewModelProtocol
+    @objc private var viewModel: SignInViewModel
+    private var userInMemoryObservation: NSKeyValueObservation?
+    private var emailStatusObservation: NSKeyValueObservation?
     
     private var signInLabel: UILabel = {
         let label = UILabel()
@@ -57,8 +61,13 @@ class SingInView: UIViewController {
         button.layer.cornerRadius = 17
         button.setTitle("Sign in", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.addTarget(nil, action: #selector(askViewModel), for: .touchUpInside)
         return button
     }()
+    
+    @objc private func askViewModel() {
+        viewModel.doYouKnowThisMan()
+    }
     
     private lazy var mainStackView: UIStackView = {
         let stack = UIStackView()
@@ -165,7 +174,7 @@ class SingInView: UIViewController {
         return stack
     }()
     
-    init(viewModel: SignInViewModelProtocol) {
+    init(viewModel: SignInViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -183,7 +192,47 @@ class SingInView: UIViewController {
         view.backgroundColor = .systemBackgroundColor
         setViews()
         setConstraintsViews()
+        userInMemoryObserver()
+        emailStatusObserver()
     }
+    
+    private func userInMemoryObserver() {
+        userInMemoryObservation = observe(\.viewModel.iRemmemberThisMan, options: .new) { key, change in
+            guard let newValue = change.newValue else { return }
+            if newValue {
+                print("model said that know this user")
+                self.alertError(title: "Error", message: "User with this name already registred")
+            } else {
+                print("model said this new user")
+                self.viewModel.checkEmail()
+            }
+        }
+    }
+    
+    private func emailStatusObserver() {
+        emailStatusObservation = observe(\.viewModel.isEmailCorrect, options: .new) { key, change in
+            guard let newValue = change.newValue else { return }
+            if newValue {
+                print("model said email is correct")
+                self.viewModel.saveThisUser()
+                print("present main flow")
+                let mainFlow = TabBarController()
+                mainFlow.modalPresentationStyle = .fullScreen
+                self.present(mainFlow, animated: true)
+            } else {
+                print("model said email not correct")
+                self.alertError(title: "Bad email", message: "Your email not correct")
+            }
+        }
+    }
+    
+    private func alertError(title: String, message: String ){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
+    }
+    
     
     @objc private func editTextFields() {
         if let firstName = firstNameTextField.text, let lastName = lastNameTextField.text, let email = emailTextField.text {
@@ -208,11 +257,11 @@ class SingInView: UIViewController {
     
     private func setConstraintsViews() {
         NSLayoutConstraint.activate([
-            signInLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 70),
+            signInLabel.bottomAnchor.constraint(equalTo: mainStackView.topAnchor, constant: -50),
             signInLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             mainStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainStackView.topAnchor.constraint(equalTo: signInLabel.bottomAnchor, constant: 70),
+            mainStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             mainStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             mainStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             
@@ -229,7 +278,7 @@ class SingInView: UIViewController {
             logInButton.topAnchor.constraint(equalTo: haveAccLabel.topAnchor),
             logInButton.heightAnchor.constraint(equalTo: haveAccLabel.heightAnchor),
             
-            bottomStackView.topAnchor.constraint(equalTo: mainStackView.bottomAnchor, constant: 90),
+            bottomStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
             bottomStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             bottomStackView.widthAnchor.constraint(equalToConstant: 180),
             

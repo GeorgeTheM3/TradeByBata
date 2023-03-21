@@ -9,4 +9,7 @@ protocol SignInViewModelProtocol {
     func enterFirstName(_ firstname: String)
     func enterLastName(_ lastname: String)
     func enterEmail(_ email: String)
+    func doYouKnowThisMan()
+    func checkEmail()
+    func saveThisUser()
 }

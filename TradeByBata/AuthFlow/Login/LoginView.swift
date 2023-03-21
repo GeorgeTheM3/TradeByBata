@@ -8,7 +8,8 @@
 import UIKit
 
 class LoginView: UIViewController {
-    private var viewModel: LoginViewModelProtocol
+    @objc private var viewModel: LoginViewModel
+    private var userInMemoryObservation: NSKeyValueObservation?
     
     private var welcomeLabel: UILabel = {
         let label = UILabel()
@@ -37,6 +38,7 @@ class LoginView: UIViewController {
         textField.backgroundColor = .textFieldColor
         textField.textAlignment = .center
         textField.placeholder = "Password"
+        textField.isSecureTextEntry = true
         textField.addTarget(nil, action: #selector(editTextFields), for: .allEditingEvents)
         return textField
     }()
@@ -46,7 +48,7 @@ class LoginView: UIViewController {
         button.backgroundColor = .buttonColor
         button.layer.cornerRadius = 17
         button.setTitle("Login", for: .normal)
-        button.addTarget(nil, action: #selector(showMainFlow), for: .touchUpInside)
+        button.addTarget(nil, action: #selector(checkUser), for: .touchUpInside)
         button.setTitleColor(.white, for: .normal)
         return button
     }()
@@ -63,7 +65,7 @@ class LoginView: UIViewController {
         return stack
     }()
     
-    init(viewModel: LoginViewModelProtocol) {
+    init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -72,10 +74,8 @@ class LoginView: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc private func showMainFlow() {
-        let mainFlow = TabBarController()
-        mainFlow.modalPresentationStyle = .fullScreen
-        present(mainFlow, animated: true)
+    @objc private func checkUser() {
+        viewModel.doYouKnowThisMan()
     }
     
     override func viewDidLoad() {
@@ -83,6 +83,30 @@ class LoginView: UIViewController {
         view.backgroundColor = .systemBackgroundColor
         setViews()
         setConstraintsViews()
+        userInMemoryObserver()
+    }
+    
+    private func userInMemoryObserver() {
+        userInMemoryObservation = observe(\.viewModel.iRemmemberThisMan, options: .new) { key, change in
+            guard let newValue = change.newValue else { return }
+            if newValue {
+                print("model said that know this user")
+                print("show main flow")
+                let mainFlow = TabBarController()
+                mainFlow.modalPresentationStyle = .fullScreen
+                self.present(mainFlow, animated: true)
+            } else {
+                print("model said this new user")
+                self.alertError(title: "Error", message: "User dont registred")
+            }
+        }
+    }
+    
+    private func alertError(title: String, message: String ){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
     
     @objc private func editTextFields() {
@@ -99,11 +123,11 @@ class LoginView: UIViewController {
     
     private func setConstraintsViews() {
         NSLayoutConstraint.activate([
-            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 70),
+            welcomeLabel.bottomAnchor.constraint(equalTo: mainStackView.topAnchor, constant: -50),
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             mainStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainStackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 70),
+            mainStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             mainStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             mainStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             

@@ -7,14 +7,14 @@
 
 import Foundation
 
-class SignInViewModel {
+class SignInViewModel: NSObject {
+    
     private var firstName = String()
     private var lastName =  String()
     private var email = String()
     
-    deinit {
-        print("deinit model")
-    }
+    @objc dynamic var iRemmemberThisMan = false
+    @objc dynamic var isEmailCorrect = false
     
 }
 
@@ -29,5 +29,20 @@ extension SignInViewModel: SignInViewModelProtocol {
     
     func enterEmail(_ email: String) {
         self.email = email
+    }
+    
+    func checkEmail() {
+        isEmailCorrect = LogicModel.shared.emailVerification(email: email)
+    }
+    
+    func doYouKnowThisMan() {
+        iRemmemberThisMan = UserDefaultsStorage.shared.checkUserInUserDefaults(firstName: firstName)
+    }
+    
+    func saveThisUser() {
+        let user = User(firstName: firstName, lastName: lastName, email: email, password: "", balance: 0, photo: nil)
+        LocalStorage.shared.currentUser = user
+        UserDefaultsStorage.shared.saveNewUser(user: user)
+        print("user with email - \(user.email) saved")
     }
 }

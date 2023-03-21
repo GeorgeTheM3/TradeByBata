@@ -8,4 +8,5 @@
 protocol LoginViewModelProtocol {
     func enterFirstName(_ firstname: String)
     func enterPassword(_ password: String)
+    func doYouKnowThisMan()
 }
