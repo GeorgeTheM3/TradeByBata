@@ -12,4 +12,6 @@ struct User: Codable {
     let lastName: String
     let email: String
     let password: String
+    let balance: Int
+    let photo: Data?
 }

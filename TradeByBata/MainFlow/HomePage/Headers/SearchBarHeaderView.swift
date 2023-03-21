@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-class SearchBarHeader: UICollectionReusableView {
+class SearchBarHeaderView: UICollectionReusableView {
     private var searchTextField: UISearchTextField = {
         let searchTextField = UISearchTextField()
         searchTextField.placeholder = "What are you looking for?"

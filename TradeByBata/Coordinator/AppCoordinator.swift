@@ -18,7 +18,7 @@ class AppCoordinator: CoordinatorProtocol {
     
     func start() {
         if isLogged {
-            let singInScreen = CategoriesCollectionView()
+            let singInScreen = HomePageCollectionView(viewModel: HomePageViewModel())
             navigationController.pushViewController(singInScreen, animated: false)
         } else {
             let authCoordinator = AuthCoordinator(navigationController: navigationController)
