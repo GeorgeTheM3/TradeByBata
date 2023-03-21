@@ -12,9 +12,10 @@ class LogicModel {
     
     func emailVerification(email: String) -> Bool {
         var result = false
+        let enteredEmail = email.dropFirst()
         let arrayDomens = ["@mail.ru" , "@yandex.ru", "@gmail.com"]
         for domen in arrayDomens {
-            if email.hasSuffix(domen) {
+            if enteredEmail.hasSuffix(domen) {
                 print("\(email) has suffix \(domen)")
                 result = true
             } else {
