@@ -11,6 +11,7 @@ class LocalStorage {
     static let shared = LocalStorage()
     var latestProducts: [Product] = []
     var flashSaleProducts: [Product] = []
+    var currentUser: User!
     
     func saveLatestProduct(_ product: Product) {
         latestProducts.append(product)
