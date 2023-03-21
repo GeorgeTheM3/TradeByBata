@@ -333,12 +333,12 @@
 			isa = PBXGroup;
 			children = (
 				5EF22B0229BA49CE00361F35 /* AppDelegate.swift */,
-				5ECE4FBA29C708AA00EA8E04 /* Helper */,
 				5ECE4FA329C5932E00EA8E04 /* Extensions */,
+				5ECE4FBA29C708AA00EA8E04 /* Helper */,
 				5ED545C529C1E1D9005F1874 /* Coordinator */,
 				5ECE4F9529C5919F00EA8E04 /* Model */,
-				5ED545DE29C1E48E005F1874 /* MainFlow */,
 				5ED545CD29C1E2E3005F1874 /* AuthFlow */,
+				5ED545DE29C1E48E005F1874 /* MainFlow */,
 				5EF22B0B29BA49CF00361F35 /* Assets.xcassets */,
 				5EF22B0D29BA49CF00361F35 /* LaunchScreen.storyboard */,
 				5EF22B1029BA49CF00361F35 /* Info.plist */,
