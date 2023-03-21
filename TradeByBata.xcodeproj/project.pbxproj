@@ -30,6 +30,7 @@
 		5ECE4FE629C83E7700EA8E04 /* LogicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE529C83E7700EA8E04 /* LogicModel.swift */; };
 		5ECE4FE929C83EA100EA8E04 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FE829C83EA100EA8E04 /* UserDefaultsStorage.swift */; };
 		5ECE4FEB29C83ED200EA8E04 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */; };
+		5ECE4FF729C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FF629C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -68,6 +69,7 @@
 		5ECE4FE529C83E7700EA8E04 /* LogicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicModel.swift; sourceTree = "<group>"; };
 		5ECE4FE829C83EA100EA8E04 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		5ECE4FEA29C83ED200EA8E04 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		5ECE4FF629C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewModelProtocol.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -209,6 +211,39 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		5ECE4FF229C9EAE600EA8E04 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				5ECE4FF529C9EB0400EA8E04 /* Header */,
+				5ECE4FF429C9EAFF00EA8E04 /* Cells */,
+				5ECE4FF329C9EAF600EA8E04 /* Protocols */,
+			);
+			name = ProfilePage;
+			path = ../ProfilePage;
+			sourceTree = "<group>";
+		};
+		5ECE4FF329C9EAF600EA8E04 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5ECE4FF629C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5ECE4FF429C9EAFF00EA8E04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5ECE4FF529C9EB0400EA8E04 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		5ED545C529C1E1D9005F1874 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +294,7 @@
 		5ED545DE29C1E48E005F1874 /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				5ECE4FF229C9EAE600EA8E04 /* ProfilePage */,
 				5ECE4FC129C70AC300EA8E04 /* HomePage */,
 				5ECE4FBE29C7099F00EA8E04 /* TabBarController */,
 			);
@@ -381,6 +417,7 @@
 				5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */,
 				5ECE4FBC29C708BF00EA8E04 /* Delegates.swift in Sources */,
 				5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */,
+				5ECE4FF729C9EB2100EA8E04 /* ProfilePageViewModelProtocol.swift in Sources */,
 				5EB3D7E829BC757500C28685 /* Colors.swift in Sources */,
 				5ED545DB29C1E3CC005F1874 /* LoginView.swift in Sources */,
 				5ED545D529C1E358005F1874 /* SignInViewModelProtocol.swift in Sources */,
