@@ -34,6 +34,7 @@
 		5ECE4FF929C9EBD600EA8E04 /* ProfileCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FF829C9EBD600EA8E04 /* ProfileCustomCell.swift */; };
 		5ECE4FFB29C9EBFF00EA8E04 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FFA29C9EBFF00EA8E04 /* ProfileHeader.swift */; };
 		5ECE4FFD29C9EC2800EA8E04 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FFC29C9EC2800EA8E04 /* ProfilePageView.swift */; };
+		5ECE4FFF29C9EC4200EA8E04 /* ProfilePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4FFE29C9EC4200EA8E04 /* ProfilePageViewModel.swift */; };
 		5ED545C729C1E1FD005F1874 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */; };
 		5ED545C929C1E242005F1874 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545C829C1E242005F1874 /* AppCoordinator.swift */; };
 		5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */; };
@@ -76,6 +77,7 @@
 		5ECE4FF829C9EBD600EA8E04 /* ProfileCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCustomCell.swift; sourceTree = "<group>"; };
 		5ECE4FFA29C9EBFF00EA8E04 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		5ECE4FFC29C9EC2800EA8E04 /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
+		5ECE4FFE29C9EC4200EA8E04 /* ProfilePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewModel.swift; sourceTree = "<group>"; };
 		5ED545C629C1E1FD005F1874 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		5ED545C829C1E242005F1874 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5ED545CA29C1E281005F1874 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				5ECE4FF429C9EAFF00EA8E04 /* Cells */,
 				5ECE4FF329C9EAF600EA8E04 /* Protocols */,
 				5ECE4FFC29C9EC2800EA8E04 /* ProfilePageView.swift */,
+				5ECE4FFE29C9EC4200EA8E04 /* ProfilePageViewModel.swift */,
 			);
 			name = ProfilePage;
 			path = ../ProfilePage;
@@ -424,6 +427,7 @@
 				5ECE4FFB29C9EBFF00EA8E04 /* ProfileHeader.swift in Sources */,
 				5ECE4F9C29C5921300EA8E04 /* FlashSaleModel.swift in Sources */,
 				5ECE4FA029C5924400EA8E04 /* ProductModel.swift in Sources */,
+				5ECE4FFF29C9EC4200EA8E04 /* ProfilePageViewModel.swift in Sources */,
 				5EF22B0329BA49CE00361F35 /* AppDelegate.swift in Sources */,
 				5ECE4FBC29C708BF00EA8E04 /* Delegates.swift in Sources */,
 				5ED545CB29C1E281005F1874 /* AuthCoordinator.swift in Sources */,
