@@ -32,10 +32,26 @@ class HomePageCollectionView: UIViewController {
         setupNavigationBar()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUserPhoto()
+    }
+    
     private func setupNavigationBar() {
         createCustomNavigationBar(title: "Trade by Bata")
         navigationItem.leftBarButtonItem = createBarButton(systemNameImage: "line.3.horizontal", selector: #selector(pressButton))
-        navigationItem.rightBarButtonItem = createCustomBarButton(imageNamed: UIImage(named: "PS5")!, selector: #selector(pressButton))
+    }
+    
+    private func setUserPhoto() {
+        var image: UIImage
+        if let imageData = viewModel.getUserPhoto() {
+            guard let photo = UIImage(data: imageData) else { return }
+            image = photo
+        } else {
+            guard let defaultPhoto = UIImage(named: "default-user") else { return }
+            image = defaultPhoto
+        }
+        navigationItem.rightBarButtonItem = createCustomBarButton(imageNamed: image, selector: #selector(pressButton))
     }
     
     @objc func pressButton() {
@@ -74,7 +90,7 @@ class HomePageCollectionView: UIViewController {
         homePageCollectionView.register(CategoriesCell.self, forCellWithReuseIdentifier: CategoriesCell.reuseId)
         homePageCollectionView.register(LatestCell.self, forCellWithReuseIdentifier: LatestCell.reuseId)
         homePageCollectionView.register(FlashSaleCell.self, forCellWithReuseIdentifier: FlashSaleCell.reuseId)
-        homePageCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        homePageCollectionView.register(BrandCell.self, forCellWithReuseIdentifier: BrandCell.reuseId)
         
         homePageCollectionView.register(SearchBarHeaderView.self, forSupplementaryViewOfKind: Headers.categories.rawValue, withReuseIdentifier: Headers.categories.rawValue)
         homePageCollectionView.register(GroupHeaderView.self, forSupplementaryViewOfKind: Headers.latest.rawValue, withReuseIdentifier: Headers.latest.rawValue)
@@ -130,10 +146,14 @@ class HomePageCollectionView: UIViewController {
                     cell.clipsToBounds = true
                     return cell
                 }
-            default:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-                cell.backgroundColor = .blue
-                return cell
+            case .brands:
+                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BrandCell.reuseId, for: indexPath) as? BrandCell {
+                    self.passInfoToCell = cell
+                    self.passInfoToCell?.passProduct(itemIdentifier)
+                    cell.layer.cornerRadius = 15
+                    cell.clipsToBounds = true
+                    return cell
+                }
             }
             return UICollectionViewCell()
         })
@@ -164,11 +184,10 @@ class HomePageCollectionView: UIViewController {
             snapshot.appendItems(viewModel.flashSaleProducts, toSection: .flashSale)
         }
         
-        snapshot.appendItems([Product(category: "Phones", name: "", price: 0, discount: nil, imageUrl: "candybarphone", imageData: nil)], toSection: .brands)
-        snapshot.appendItems([Product(category: "Headphones", name: "", price: 0, discount: nil, imageUrl: "headphones", imageData: nil)], toSection: .brands)
-        snapshot.appendItems([Product(category: "Games", name: "", price: 0, discount: nil, imageUrl: "gamecontroller",imageData: nil)], toSection: .brands)
-        snapshot.appendItems([Product(category: "Cars", name: "", price: 0, discount: nil, imageUrl: "car",imageData: nil)], toSection: .brands)
-        snapshot.appendItems([Product(category: "Furniture", name: "", price: 0, discount: nil, imageUrl: "table.furniture",imageData: nil)], toSection: .brands)
+        snapshot.appendItems([Product(category: "PlayStation", name: "", price: 0, discount: nil, imageUrl: "ps", imageData: nil)], toSection: .brands)
+        snapshot.appendItems([Product(category: "BMW", name: "", price: 0, discount: nil, imageUrl: "bmw", imageData: nil)], toSection: .brands)
+        snapshot.appendItems([Product(category: "Reebok", name: "", price: 0, discount: nil, imageUrl: "reebok",imageData: nil)], toSection: .brands)
+        snapshot.appendItems([Product(category: "Samsung", name: "", price: 0, discount: nil, imageUrl: "samsung",imageData: nil)], toSection: .brands)
         
         
         snapshot.appendItems([Product(category: "Phones", name: "", price: 0, discount: nil, imageUrl: "candybarphone", imageData: nil)], toSection: .categories)
