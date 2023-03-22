@@ -14,7 +14,7 @@ class LatestCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "phone")
         imageView.backgroundColor = .systemGray4
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.frame = contentView.bounds
         return imageView
     }()
