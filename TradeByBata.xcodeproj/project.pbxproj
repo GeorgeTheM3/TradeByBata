@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E26CB0129CB6AE900ADEEBA /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E26CB0029CB6AE900ADEEBA /* BrandCell.swift */; };
 		5EB3D7E829BC757500C28685 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3D7E729BC757500C28685 /* Colors.swift */; };
 		5EB3D7EA29BC75A400C28685 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3D7E929BC75A400C28685 /* Fonts.swift */; };
 		5ECE4F9829C591B400EA8E04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECE4F9729C591B400EA8E04 /* NetworkManager.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E26CB0029CB6AE900ADEEBA /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
 		5EB3D7E729BC757500C28685 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5EB3D7E929BC75A400C28685 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		5ECE4F9729C591B400EA8E04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				5ECE4FD029C70BC600EA8E04 /* CategoriesCell.swift */,
 				5ECE4FD229C70BF200EA8E04 /* LatestCell.swift */,
 				5ECE4FD429C70C1200EA8E04 /* FlashSaleCell.swift */,
+				5E26CB0029CB6AE900ADEEBA /* BrandCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				5ECE4FD129C70BC600EA8E04 /* CategoriesCell.swift in Sources */,
 				5ECE4FCB29C70B4A00EA8E04 /* HomePageViewModelProtocol.swift in Sources */,
 				5ECE4FF929C9EBD600EA8E04 /* ProfileCustomCell.swift in Sources */,
+				5E26CB0129CB6AE900ADEEBA /* BrandCell.swift in Sources */,
 				5ED545DD29C1E3F0005F1874 /* LoginViewModel.swift in Sources */,
 				5ECE4FCF29C70B8C00EA8E04 /* Headers.swift in Sources */,
 				5ECE4FD929C70C6600EA8E04 /* SearchBarHeaderView.swift in Sources */,
