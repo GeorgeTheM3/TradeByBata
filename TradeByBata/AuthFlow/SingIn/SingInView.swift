@@ -243,8 +243,7 @@ class SingInView: UIViewController {
     }
     
     @objc private func showLoginScreen() {
-        let loginScreen = LoginView(viewModel: LoginViewModel())
-        navigationController?.pushViewController(loginScreen, animated: true)
+        viewModel.goToLogin()
     }
     
     private func setViews() {

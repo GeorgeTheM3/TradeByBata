@@ -9,6 +9,8 @@ import Foundation
 
 class SignInViewModel: NSObject {
     
+    weak var coordinator: AuthCoordinator!
+    
     private var firstName = String()
     private var lastName =  String()
     private var email = String()
@@ -44,5 +46,9 @@ extension SignInViewModel: SignInViewModelProtocol {
         LocalStorage.shared.currentUser = user
         UserDefaultsStorage.shared.saveNewUser(user: user)
         print("user with email - \(user.email) saved")
+    }
+    
+    func goToLogin() {
+        coordinator.goToLoginScreen()
     }
 }
