@@ -47,4 +47,8 @@ extension SignInViewModel: SignInViewModelProtocol {
         UserDefaultsStorage.shared.saveNewUser(user: user)
         print("user with email - \(user.email) saved")
     }
+    
+    func goToLogin() {
+        coordinator.goToLoginScreen()
+    }
 }
