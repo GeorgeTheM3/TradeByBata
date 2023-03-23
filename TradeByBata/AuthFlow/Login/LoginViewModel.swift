@@ -8,6 +8,9 @@
 import Foundation
 
 class LoginViewModel: NSObject {
+    
+    weak var coordinator: AuthCoordinator!
+    
     private var firstName = String()
     private var password =  String()
     
