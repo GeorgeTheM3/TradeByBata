@@ -9,6 +9,8 @@ import Foundation
 
 class SignInViewModel: NSObject {
     
+    weak var coordinator: AuthCoordinator!
+    
     private var firstName = String()
     private var lastName =  String()
     private var email = String()
