@@ -14,7 +14,9 @@ class AuthCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let singInScreen = SingInView(viewModel: SignInViewModel())
+        let viewModel = SignInViewModel()
+        viewModel.coordinator = self
+        let singInScreen = SingInView(viewModel: viewModel)
         navigationController.pushViewController(singInScreen, animated: false)
     }
 }
