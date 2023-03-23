@@ -19,4 +19,11 @@ class AuthCoordinator: CoordinatorProtocol {
         let singInScreen = SingInView(viewModel: viewModel)
         navigationController.pushViewController(singInScreen, animated: false)
     }
+    
+    func goToLoginScreen() {
+        let viewModel = LoginViewModel()
+        viewModel.coordinator = self
+        let loginScreen = LoginView(viewModel: viewModel)
+        navigationController.pushViewController(loginScreen, animated: false)
+    }
 }
